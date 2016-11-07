@@ -27,9 +27,8 @@
                         <Button
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:id="@+id/btIncluir"
                             android:text="INCLUIR"
-                            android:onClick="adicionar"
+                            android:onClick="adicionarDisciplina"
                             android:textSize="20sp"/>
 
 

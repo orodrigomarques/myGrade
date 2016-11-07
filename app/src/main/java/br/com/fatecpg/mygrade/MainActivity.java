@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void adicionar(View view){
+    public void adicionarDisciplina(View view){
         Intent i = new Intent(getApplicationContext(), CadastrarActivity.class);
         startActivity(i);
     }
