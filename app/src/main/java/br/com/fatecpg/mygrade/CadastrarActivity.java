@@ -1,4 +1,4 @@
-package br.com.fatecpg.mygrade;
+package com.app.mygrades.mygrades;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -6,7 +6,10 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
+
 import java.io.FileOutputStream;
+
+
 
 public class CadastrarActivity extends AppCompatActivity {
 
