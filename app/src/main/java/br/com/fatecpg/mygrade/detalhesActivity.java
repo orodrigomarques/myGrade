@@ -1,4 +1,4 @@
-package br.com.fatecpg.mygrade;
+package com.app.mygrades.mygrades;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,14 +8,13 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.FileReader;
 
-/**
- * Created by Alex on 06/11/2016.
- */
+
 
 public class DetalhesActivity extends AppCompatActivity {
 
