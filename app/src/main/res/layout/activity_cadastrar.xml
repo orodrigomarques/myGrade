@@ -2,21 +2,41 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <EditText
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@drawable/icon_app"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Cadastrar Disciplinas"
+            android:gravity="center"
+            android:textSize="29sp"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nome da Disciplina:"
-        android:textSize="40dp"/>
+        android:text="Nome da Disciplina"
+        android:textSize="30sp"/>
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/etIncluirDisciplina"
         android:hint="Digite aqui a disciplina... "
-        android:textSize="30dp"/>
+        android:textSize="30sp"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/btIncluirDisplina"
         android:text="Incluir"
-        android:textSize="30dp"/>
+        android:textSize="30dp"
+        android:onClick="salvar"
+        android:background="@android:color/holo_orange_dark"
+        />
+
+
 </LinearLayout>
