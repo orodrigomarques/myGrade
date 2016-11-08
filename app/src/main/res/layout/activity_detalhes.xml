@@ -3,13 +3,26 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <TextView
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tvDisciplina"
-        android:hint="Discplina..."
-        android:textSize="40dp"
-        android:gravity="center"/>
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@drawable/icon_app"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="Disciplina"
+            android:gravity="center"
+            android:textSize="40sp"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"
+            android:id="@+id/tvDisciplina"/>
+    </LinearLayout>
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,14 +32,16 @@
             android:layout_height="wrap_content"
             android:text="Nota 1: "
             android:id="@+id/tvNota1"
-            android:textSize="30dp"/>
+            android:textSize="30dp"
+            android:textColor="@android:color/black" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/etNota1"
-            android:text="Nota 1: "
+            android:hint="P1"
             android:textSize="30dp"
-            android:gravity="end"/>
+            android:gravity="end"
+            android:inputType="number"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -37,19 +52,21 @@
             android:layout_height="wrap_content"
             android:text="Nota 2: "
             android:textSize="30dp"
-            android:id="@+id/tvNota2"/>
+            android:id="@+id/tvNota2"
+            android:textColor="@android:color/black" />
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/etNota2"
-            android:text="Nota 2: "
+            android:hint="P2"
             android:textSize="30dp"
-            android:gravity="end"/>
+            android:gravity="end"
+            android:inputType="number"/>
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:orientation="vertical">
         <Button
             android:layout_width="match_parent"
@@ -57,26 +74,33 @@
             android:id="@+id/btAtualizar"
             android:text="Atualizar Notas"
             android:textSize="30dp"
-            android:onClick="atualizar"/>
+            android:onClick="atualizar"
+            android:background="@android:color/holo_orange_dark"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Media"
-            android:textSize="40dp"
-            android:gravity="center"/>
+            android:text="Média"
+            android:textSize="30sp"
+            android:gravity="center"
+            android:textColor="@android:color/black" />
         <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/tvMedia"
-                android:hint="media..."
-                android:textSize="80dp"
-                android:gravity="center"/>
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvMedia"
+            android:hint="media"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:textColor="@android:color/black"
+            android:layout_weight="1"/>
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btVoltar"
             android:text="Voltar"
             android:textSize="30dp"
-            android:onClick="voltar"/>
+            android:onClick="voltar"
+            android:background="@android:color/holo_orange_dark"
+            android:layout_gravity=""/>
     </LinearLayout>
+
 </LinearLayout>
